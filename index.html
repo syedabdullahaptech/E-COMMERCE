@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Garment Shop</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, sans-serif;
+}
+
+body{
+    background:#f9f9f9;
+}
+nav{
+    background:#fff;
+    padding:15px 5%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    box-shadow:0 2px 5px rgba(0,0,0,0.05);
+}
+
+.logo-text{
+    font-size:24px;
+    font-weight:bold;
+    color:#333;
+}
+
+.logo-text span{
+    color:#e91e63;
+}
+
+.nav-links a{
+    text-decoration:none;
+    color:#555;
+    margin-left:20px;
+    transition:0.3s;
+}
+
+.nav-links a:hover{
+    color:#e91e63;
+}
+
+
+.hero{
+    text-align:center;
+    padding:60px 5%;
+    background:linear-gradient(to right,#fce4ec,#681230);
+}
+
+.hero h1{
+    font-size:36px;
+    margin-bottom:10px;
+}
+
+.hero p{
+    color:#555;
+    margin-bottom:20px;
+}
+
+.btn{
+    background:#e91e63;
+    color:#fff;
+    padding:10px 25px;
+    border-radius:25px;
+    text-decoration:none;
+    transition:0.3s;
+}
+
+.btn:hover{
+    background:#0ea5ca;
+}
+
+
+.container{
+    padding:50px 5%;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:40px;
+    font-size:28px;
+}
+
+.products{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:25px;
+}
+
+.card{
+    background:#fff;
+    border-radius:10px;
+    overflow:hidden;
+    box-shadow:0 5px 15px rgba(0,0,0,0.05);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+}
+
+.card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.card-content{
+    padding:15px;
+    text-align:center;
+}
+
+.card h3{
+    margin-bottom:8px;
+}
+
+.card p{
+    color:#e91e63;
+    font-weight:bold;
+    margin-bottom:10px;
+}
+
+.card a{
+    display:inline-block;
+    padding:8px 20px;
+    background:#333;
+    color:#fff;
+    text-decoration:none;
+    border-radius:20px;
+    transition:0.3s;
+}
+
+.card a:hover{
+    background:#e91e63;
+}
+
+
+footer{
+    background:#333;
+    color:#aaa;
+    text-align:center;
+    padding:20px;
+    margin-top:50px;
+}
+
+
+@media(max-width:992px){
+    .products{
+        grid-template-columns:repeat(2,1fr);
+    }
+}
+
+@media(max-width:500px){
+    .products{
+        grid-template-columns:1fr;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+    <div class="logo-text">Cloth<span>Store</span></div>
+    <div class="nav-links">
+        <a href="#">Home</a>
+        <a href="#">Men</a>
+        <a href="#">Women</a>
+        <a href="#">Contact</a>
+    </div>
+</nav>
+
+<div class="hero">
+    <h1>New Arrivals</h1>
+    <p>Best quality garments for you.</p>
+    <a href="#" class="btn">Shop Now</a>
+</div>
+
+<div class="container">
+    <h2 class="section-title">Our Products</h2>
+
+    <div class="products">
+
+        <div class="card">
+            <img src="tartan-plaid-shirt.jpg" alt="Shirt">
+            <div class="card-content">
+                <h3>Casual Shirt</h3>
+                <p>$25</p>
+                <a href="#">Buy</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="graphic-tshirt-trendy-design-mockup-presented-wooden-hanger.jpg" alt="T-Shirt">
+            <div class="card-content">
+                <h3>T-Shirt</h3>
+                <p>$15</p>
+                <a href="#">Buy</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="shop-clothing-clothes-shop-hanger-modern-shop-boutique.jpg" alt="Jeans">
+            <div class="card-content">
+                <h3>Jeans</h3>
+                <p>$40</p>
+                <a href="#">Buy</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="still-life-rendering-jackets-display.jpg" alt="Jacket">
+            <div class="card-content">
+                <h3>Jacket</h3>
+                <p>$60</p>
+                <a href="#">Buy</a>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2026 ClothStore. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
